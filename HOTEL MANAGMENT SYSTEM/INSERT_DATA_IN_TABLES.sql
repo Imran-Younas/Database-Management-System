@@ -1,0 +1,317 @@
+USE HOTEL_MANAGMENT_SYSTEM; 
+
+/* -----------    INSERT DATA IN HOTEL TABLE      -------------  */   
+
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0001', 'PEARL CONTINENTAL', 'KARACHI', 4.5);
+
+INSERT INTO HOTELS(Hotel_ID , HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0002','SERENA HOTEL', 'ISLAMABAD', 4.7);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0003', 'MARRIOTT HOTEL', 'LAHORE', 4.3);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0004','PC BURHAN', 'BURHAN', 4.6);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0005','AVARI TOWERS', 'KARCHI', 4.4);
+
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0006','NISHAT HOTEL', 'LAHORE', 4.2);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0007','PEARL CONTINENTAL ', 'RAWALPINDI', 4.0);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0008','RAMADA PLAZA', 'KARCHI', 4.3);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0009','MOVENPICK HOTEL', 'KARCHI', 4.1);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0010','SHERATON HOTEL', 'LAHORE', 4.5);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0011','MARRIOTT HOTEL', 'ISLAMABAD', 4.6);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0012', 'PC GAWADAR', 'GAWADAR', 4.4);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0013', 'PEARL CONTINENTAL', 'PESHAWAR', 4.3);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0014', 'SERENA HOTEL', 'FAISALABAD', 4.1);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0015', 'AVARI HOTEL', 'LAHORE', 4.5);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0016', 'PC MUZAFFARABAD', 'MUZAFFARABAD', 4.2);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0017', 'RAMADA PLAZA', 'LAHORE', 4.0);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0018', 'PEARL CONTINENTAL', 'MULTAN', 4.3);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0019', 'SERENA HOTEL', 'QUETA', 4.1);
+
+INSERT INTO HOTELS(Hotel_ID, HOTEL_NAME, HOTEL_LOCATION, HOTEL_RATING)
+VALUES('HOTEL-0020', 'MARIOTT HOTEL', 'MULTAN', 4.3);
+
+SELECT *  FROM HOTELS;
+
+
+
+/* -----------    INSERT DATA IN ROOM TABLE      -------------  */ 
+
+INSERT INTO ROOM (ROOM_ID, HOTEL_ID, ROOM_TYPE, PRICE_$, CAPACITY)
+VALUES
+	('ROOM-001', 'HOTEL-0001', 'DELUXE', 200, 2),
+	('ROOM-002', 'HOTEL-0001', 'SUITE', 300, 4),
+	('ROOM-003', 'HOTEL-0002', 'STANDARD', 150, 2),
+	('ROOM-004', 'HOTEL-0002', 'EXECUTIVE', 250, 2),
+	('ROOM-005', 'HOTEL-0003', 'DELUXE', 300, 4 ),
+	('ROOM-006','HOTEL-0003', 'SUITE', 200, 2),
+	('ROOM-007', 'HOTEL-0004', 'STANDARD', 170, 2),
+	('ROOM-008', 'HOTEL-0004', 'EXECUTIVE', 250, 3),
+	('ROOM-009', 'HOTEL-0005', 'DELUXE', 400, 4),
+	('ROOM-010', 'HOTEL-0005', 'SUITE', 220, 3),
+	('ROOM-011', 'HOTEL-0006', 'STANDARD', 120, 2),
+	('ROOM-012', 'HOTEL-0006', 'EXECUTIVE', 480, 4),
+	('ROOM-013', 'HOTEL-0007', 'DELUXE', 370, 4),
+	('ROOM-014', 'HOTEL-0007', 'DELUXE', 210, 3),
+	('ROOM-015', 'HOTEL-0008', 'SUITE', 170, 2),
+	('ROOM-016', 'HOTEL-0008', 'STANDARD', 190, 2),
+	('ROOM-017', 'HOTEL-0009', 'EXECUTIVE', 280, 4),
+	('ROOM-018', 'HOTEL-0009', 'SUITE', 130, 3),
+	('ROOM-019', 'HOTEL-0010', 'STANDARD', 180, 2),
+	('ROOM-020', 'HOTEL-0011', 'DELUXE', 230, 3);
+
+
+INSERT INTO ROOM (ROOM_ID, HOTEL_ID, ROOM_TYPE, PRICE_$, CAPACITY)
+VALUES
+    ('ROOM-021', 'HOTEL-0001', 'STANDARD', 500, 2),
+    ('ROOM-022', 'HOTEL-0001', 'DELUXE', 800, 3),
+    ('ROOM-023', 'HOTEL-0001', 'EXECUTIVE', 800, 4),
+    ('ROOM-024', 'HOTEL-0001', 'SUIT', 900, 2),
+    ('ROOM-025', 'HOTEL-0002', 'STANDARD', 700, 3),
+    ('ROOM-026', 'HOTEL-0002', 'DELUXE', 950, 2),
+    ('ROOM-027', 'HOTEL-0002', 'EXECUTIVE', 850, 4),
+    ('ROOM-028', 'HOTEL-0002', 'SUIT', 700, 3),
+    ('ROOM-029', 'HOTEL-0003', 'STANDARD', 550, 2),
+    ('ROOM-030', 'HOTEL-0003', 'DELUXE', 900, 3),
+    ('ROOM-031', 'HOTEL-0003', 'EXECUTIVE', 700, 4),
+    ('ROOM-032', 'HOTEL-0003', 'SUIT', 950, 2),
+    ('ROOM-033', 'HOTEL-0004', 'STANDARD', 600, 3),
+    ('ROOM-034', 'HOTEL-0004', 'DELUXE', 850, 2),
+    ('ROOM-035', 'HOTEL-0004', 'EXECUTIVE', 950, 4),
+    ('ROOM-036', 'HOTEL-0004', 'SUIT', 300, 3),
+    ('ROOM-037', 'HOTEL-0005', 'STANDARD', 500, 2),
+    ('ROOM-038', 'HOTEL-0005', 'DELUXE', 850, 3),
+    ('ROOM-039', 'HOTEL-0005', 'EXECUTIVE', 600, 4),
+    ('ROOM-040', 'HOTEL-0005', 'SUIT', 950, 2),
+    ('ROOM-041', 'HOTEL-0006', 'STANDARD', 550, 3),
+    ('ROOM-042', 'HOTEL-0006', 'DELUXE', 800, 2),
+    ('ROOM-043', 'HOTEL-0006', 'EXECUTIVE', 780, 4),
+    ('ROOM-044', 'HOTEL-0006', 'SUIT', 900, 3),
+    ('ROOM-045', 'HOTEL-0007', 'STANDARD', 600, 2),
+    ('ROOM-046', 'HOTEL-0007', 'DELUXE', 850, 3),
+    ('ROOM-047', 'HOTEL-0007', 'EXECUTIVE', 950, 4),
+    ('ROOM-048', 'HOTEL-0007', 'SUIT', 980, 2),
+    ('ROOM-049', 'HOTEL-0008', 'STANDARD', 500, 3),
+    ('ROOM-050', 'HOTEL-0008', 'DELUXE', 800, 2),
+    ('ROOM-051', 'HOTEL-0008', 'EXECUTIVE', 780, 4),
+    ('ROOM-052', 'HOTEL-0008', 'SUIT', 950, 3),
+    ('ROOM-053', 'HOTEL-0009', 'STANDARD', 550, 2),
+    ('ROOM-054', 'HOTEL-0009', 'DELUXE', 850, 3),
+    ('ROOM-055', 'HOTEL-0009', 'EXECUTIVE', 950, 4),
+    ('ROOM-056', 'HOTEL-0009', 'SUIT', 615, 2),
+    ('ROOM-057', 'HOTEL-0010', 'STANDARD', 600, 3),
+    ('ROOM-058', 'HOTEL-0010', 'DELUXE', 800, 2),
+    ('ROOM-059', 'HOTEL-0010', 'EXECUTIVE', 500, 4),
+    ('ROOM-060', 'HOTEL-0010', 'SUIT', 950, 3),
+    ('ROOM-061', 'HOTEL-0019', 'DELUXE', 900, 2),
+    ('ROOM-062', 'HOTEL-0020', 'SUIT', 400, 3);
+
+
+
+	SELECT * FROM ROOM;
+
+
+/* -----------    INSERT DATA IN Customer TABLE      -------------  */ 
+
+
+INSERT INTO CUSTOMER (Customer_ID, First_Name, Last_Name, EMAIL, Phone)
+VALUES
+  ('Cust-0001', 'Muhammad', 'Ali', 'muhammad.ali@example.com', 12345678901),
+  ('Cust-0002', 'Fatima', 'Khan', 'fatima.khan@example.com', 23456789012),
+  ('Cust-0003', 'Ahmed', 'Rahman', 'ahmed.rahman@example.com', 34567890123),
+  ('Cust-0004', 'Ayesha', 'Akhtar', 'ayesha.akhtar@example.com', 45678901234),
+  ('Cust-0005', 'Hassan', 'Hussain', 'hassan.hussain@example.com', 56789012345),
+  ('Cust-0006', 'Zainab', 'Ahmed', 'zainab.ahmed@example.com', 67890123456),
+  ('Cust-0007', 'Yusuf', 'Iqbal', 'yusuf.iqbal@example.com', 78901234567),
+  ('Cust-0008', 'Safia', 'Khan', 'safia.khan@example.com', 89012345678),
+  ('Cust-0009', 'Bilal', 'Siddiqui', 'bilal.siddiqui@example.com', 90123456789),
+  ('Cust-0010', 'Amina', 'Raza', 'amina.raza@example.com', 12345678901),
+  ('Cust-0011', 'Zahid', 'Kareem', 'zahid.kareem@example.com', 23456789012),
+  ('Cust-0012', 'Khadija', 'Ali', 'khadija.ali@example.com', 34567890123),
+  ('Cust-0013', 'Usman', 'Rahman', 'usman.rahman@example.com', 45678901234),
+  ('Cust-0014', 'Ayesha', 'Javed', 'ayesha.javed@example.com', 56789012345),
+  ('Cust-0015', 'Sami', 'Hassan', 'sami.hassan@example.com', 67890123456),
+  ('Cust-0016', 'Nadia', 'Azam', 'nadia.azam@example.com', 78901234567),
+  ('Cust-0017', 'Rizwan', 'Ahmed', 'rizwan.ahmed@example.com', 89012345678),
+  ('Cust-0018', 'Tahira', 'Malik', 'tahira.malik@example.com', 90123456789),
+  ('Cust-0019', 'Haris', 'Hussain', 'haris.hussain@example.com', 12345678901),
+  ('Cust-0020', 'Sana', 'Khan', 'sana.khan@example.com', 23456789012);
+
+  SELECT * FROM CUSTOMER;
+
+
+/* -----------    INSERT DATA IN RESERVATION TABLE      -------------  */ 
+
+INSERT INTO RESERVATION (Reservation_ID, Hotel_ID, Room_ID, Customer_ID, CheckInDate, CheckOutDate)
+VALUES
+  ('Resv-0001', 'HOTEL-0001', 'ROOM-001', 'Cust-0001', '2023-07-22', '2023-07-25'),
+  ('Resv-0002', 'HOTEL-0002', 'ROOM-002', 'Cust-0002', '2023-08-10', '2023-08-15'),
+  ('Resv-0003', 'HOTEL-0003', 'ROOM-003', 'Cust-0003', '2023-09-05', '2023-09-10'),
+  ('Resv-0004', 'HOTEL-0004', 'ROOM-004', 'Cust-0004', '2023-10-01', '2023-10-05'),
+  ('Resv-0005', 'HOTEL-0005', 'ROOM-005', 'Cust-0005', '2023-11-20', '2023-11-25'),
+  ('Resv-0006', 'HOTEL-0006', 'ROOM-006', 'Cust-0006', '2023-12-15', '2023-12-20'),
+  ('Resv-0007', 'HOTEL-0007', 'ROOM-007', 'Cust-0007', '2023-12-28', '2024-01-05'),
+  ('Resv-0008', 'HOTEL-0008', 'ROOM-008', 'Cust-0008', '2024-02-10', '2024-02-15'),
+  ('Resv-0009', 'HOTEL-0009', 'ROOM-009', 'Cust-0009', '2024-03-01', '2024-03-05'),
+  ('Resv-0010', 'HOTEL-0010', 'ROOM-010', 'Cust-0010', '2024-04-15', '2024-04-20'),
+  ('Resv-0011', 'HOTEL-0011', 'ROOM-011', 'Cust-0011', '2024-05-01', '2024-05-05'),
+  ('Resv-0012', 'HOTEL-0012', 'ROOM-012', 'Cust-0012', '2024-06-20', '2024-06-25'),
+  ('Resv-0013', 'HOTEL-0013', 'ROOM-013', 'Cust-0013', '2024-07-15', '2024-07-20'),
+  ('Resv-0014', 'HOTEL-0014', 'ROOM-014', 'Cust-0014', '2024-08-10', '2024-08-15'),
+  ('Resv-0015', 'HOTEL-0015', 'ROOM-015', 'Cust-0015', '2024-09-05', '2024-09-10'),
+  ('Resv-0016', 'HOTEL-0016', 'ROOM-016', 'Cust-0016', '2024-10-01', '2024-10-05'),
+  ('Resv-0017', 'HOTEL-0017', 'ROOM-017', 'Cust-0017', '2024-11-20', '2024-11-25'),
+  ('Resv-0018', 'HOTEL-0018', 'ROOM-018', 'Cust-0018', '2024-12-15', '2024-12-20'),
+  ('Resv-0019', 'HOTEL-0019', 'ROOM-019', 'Cust-0019', '2024-12-28', '2025-01-05'),
+  ('Resv-0020', 'HOTEL-0020', 'ROOM-020', 'Cust-0020', '2025-02-10', '2025-02-15'),
+  ('Resv-0021', 'HOTEL-0020', 'ROOM-020', 'Cust-0021', '2025-02-10', '2025-02-15');
+
+
+  /* -----------    INSERT DATA IN AMENITY TABLE      -------------  */ 
+
+INSERT INTO AMENITY (AMENITY_ID, AMENITY_NAME)
+VALUES
+  ('AMENITY-001', 'Swimming Pool'),
+  ('AMENITY-002', 'Gym'),
+  ('AMENITY-003', 'Spa'),
+  ('AMENITY-004', 'Free Wi-Fi'),
+  ('AMENITY-005', 'Restaurant'),
+  ('AMENITY-006', 'Bar'),
+  ('AMENITY-007', 'Room Service'),
+  ('AMENITY-008', 'Laundry Service'),
+  ('AMENITY-009', 'Parking'),
+  ('AMENITY-010', 'Airport Shuttle'),
+  ('AMENITY-011', 'Concierge Service'),
+  ('AMENITY-012', '24-Hour Front Desk'),
+  ('AMENITY-013', 'Luggage Storage'),
+  ('AMENITY-014', 'Outdoor Pool'),
+  ('AMENITY-015', 'Fitness Center'),
+  ('AMENITY-016', 'Business Center'),
+  ('AMENITY-017', 'Conference Rooms'),
+  ('AMENITY-018', 'Childcare Services'),
+  ('AMENITY-019', 'Tennis Courts'),
+  ('AMENITY-020', 'Golf Course'),
+  ('AMENITY-021', 'Fitness Classes'),
+  ('AMENITY-022', 'Sauna'),
+  ('AMENITY-023', 'Jacuzzi'),
+  ('AMENITY-024', 'Billiards Room'),
+  ('AMENITY-025', 'Library'),
+  ('AMENITY-026', 'Lounge Area'),
+  ('AMENITY-027', 'Cafeteria'),
+  ('AMENITY-028', 'Gift Shop'),
+  ('AMENITY-029', 'Bicycle Rental'),
+  ('AMENITY-030', 'Spa Services'),
+  ('AMENITY-031', 'Yoga Classes'),
+  ('AMENITY-032', 'Game Room'),
+  ('AMENITY-033', 'BBQ Facilities'),
+  ('AMENITY-034', 'Valet Parking'),
+  ('AMENITY-035', 'Pet-Friendly'),
+  ('AMENITY-036', 'Child-Friendly'),
+  ('AMENITY-037', 'Beach Access'),
+  ('AMENITY-038', 'Ski Storage'),
+  ('AMENITY-039', 'Hiking Trails'),
+  ('AMENITY-040', 'Babysitting Services');
+
+
+
+
+/* -----------    INSERT DATA IN HOTEL_AMENITY TABLE      -------------  */ 
+
+
+INSERT INTO HOTEL_AMENITY (AMENITY_ID, Hotel_ID)
+VALUES
+  ('AMENITY-001', 'HOTEL-0001'),
+  ('AMENITY-002', 'HOTEL-0002'),
+  ('AMENITY-003', 'HOTEL-0003'),
+  ('AMENITY-004', 'HOTEL-0004'),
+  ('AMENITY-005', 'HOTEL-0005'),
+  ('AMENITY-006', 'HOTEL-0006'),
+  ('AMENITY-007', 'HOTEL-0007'),
+  ('AMENITY-008', 'HOTEL-0008'),
+  ('AMENITY-009', 'HOTEL-0009'),
+  ('AMENITY-010', 'HOTEL-0010'),
+  ('AMENITY-011', 'HOTEL-0011'),
+  ('AMENITY-012', 'HOTEL-0012'),
+  ('AMENITY-013', 'HOTEL-0013'),
+  ('AMENITY-014', 'HOTEL-0014'),
+  ('AMENITY-015', 'HOTEL-0015'),
+  ('AMENITY-016', 'HOTEL-0016'),
+  ('AMENITY-017', 'HOTEL-0017'),
+  ('AMENITY-018', 'HOTEL-0018'),
+  ('AMENITY-019', 'HOTEL-0019'),
+  ('AMENITY-020', 'HOTEL-0020'),
+  ('AMENITY-021', 'HOTEL-0001'),
+  ('AMENITY-022', 'HOTEL-0002'),
+  ('AMENITY-023', 'HOTEL-0003'),
+  ('AMENITY-024', 'HOTEL-0004'),
+  ('AMENITY-025', 'HOTEL-0005'),
+  ('AMENITY-026', 'HOTEL-0006'),
+  ('AMENITY-027', 'HOTEL-0007'),
+  ('AMENITY-028', 'HOTEL-0008'),
+  ('AMENITY-029', 'HOTEL-0009'),
+  ('AMENITY-030', 'HOTEL-0010'),
+  ('AMENITY-031', 'HOTEL-0011'),
+  ('AMENITY-032', 'HOTEL-0012'),
+  ('AMENITY-033', 'HOTEL-0013'),
+  ('AMENITY-034', 'HOTEL-0014'),
+  ('AMENITY-035', 'HOTEL-0015'),
+  ('AMENITY-036', 'HOTEL-0016'),
+  ('AMENITY-037', 'HOTEL-0017'),
+  ('AMENITY-038', 'HOTEL-0018'),
+  ('AMENITY-039', 'HOTEL-0019'),
+  ('AMENITY-040', 'HOTEL-0020'),
+  ('AMENITY-001', 'HOTEL-0001'),
+  ('AMENITY-002', 'HOTEL-0002'),
+  ('AMENITY-003', 'HOTEL-0003'),
+  ('AMENITY-004', 'HOTEL-0004'),
+  ('AMENITY-005', 'HOTEL-0005'),
+  ('AMENITY-006', 'HOTEL-0006'),
+  ('AMENITY-007', 'HOTEL-0007'),
+  ('AMENITY-008', 'HOTEL-0008'),
+  ('AMENITY-009', 'HOTEL-0009'),
+  ('AMENITY-010', 'HOTEL-0010'),
+  ('AMENITY-011', 'HOTEL-0011'),
+  ('AMENITY-012', 'HOTEL-0012'),
+  ('AMENITY-013', 'HOTEL-0013'),
+  ('AMENITY-014', 'HOTEL-0014'),
+  ('AMENITY-015', 'HOTEL-0015'),
+  ('AMENITY-016', 'HOTEL-0016'),
+  ('AMENITY-017', 'HOTEL-0017'),
+  ('AMENITY-018', 'HOTEL-0018'),
+  ('AMENITY-019', 'HOTEL-0019'),
+  ('AMENITY-020', 'HOTEL-0020');
+
+  /*  ------     Data Insertion is Done     --------   *\
